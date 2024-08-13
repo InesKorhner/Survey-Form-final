@@ -99,3 +99,17 @@ if (inputName) {
     });
 }
 
+let minAge = 1;
+let inputAge = document.getElementById('age');
+
+if (inputAge) {
+    age.addEventListener ('input' , function () {
+        if (inputAge.value >= minAge) {
+            console.log ('Validation is passed');
+        } else {
+            console.log ('Please enter the valid age');
+        }
+    
+    });
+}
+

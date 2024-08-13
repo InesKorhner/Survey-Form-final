@@ -4,84 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./JS-section/survey-form/resources/js/practice.js" defer></script>
+    <script
+      src="./JS-section/survey-form/resources/js/practice.js"
+      defer
+    ></script>
     <title>MyFirst Project</title>
   </head>
   <body>
-    <h1>Survey Form</h1>
-    <form id="survey-form">
-      <div class="all-form">
-        <h3>Let us know how we can improve freeCodeCamp</h3>
-        <div class="input-field">
-          <label for="Name">Name:</label>
-          <input type="text" id="name" placeholder="Enter your name" /> <br />
-          <br />
-          <label for="Email">Email:</label>
-          <input type="text" id="email" placeholder="Enter your email" /> <br />
-          <br />
-          <label for="Age">Age:</label>
-          <input type="number" id="age" placeholder="Age" /> <br />
-          <br />
+    <form action="https://en06mdp61nn8j.x.pipedream.net" method="post">
+      <h1>Survey Form</h1>
+
+      <form id="survey-form">
+        <div class="all-form">
+          <h3>Let us know how we can improve freeCodeCamp</h3>
+
+          <div class="input-field">
+            <label for="Name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="user"
+              placeholder="Enter your name"
+            />
+            <br />
+            <br />
+            <label for="Email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email address"
+              placeholder="Enter your email"
+            />
+            <br />
+            <br />
+            <label for="Age">Age:</label>
+            <input
+              type="number"
+              min="0"
+              id="age"
+              name="user age"
+              placeholder="Age"
+            />
+            <br />
+            <br />
+          </div>
+
+          <div class="select-options">
+            <label for="Select the role"
+              >Which option best describes your current role?</label
+            >
+            <select name="current role" id="options">
+              <option name="student" value="student">Student</option>
+              <option name="master" value="master">Master</option>
+              <option name="phd"    value="phd">Phd</option>
+            </select>
+            <br />
+            <br />
+
+            <label for="recommendation"
+              >How likely is that you would recommend <br />freeCodeCamp to a
+              friend?</label
+            >
+            <br />
+            <div class="radio-container">
+              <input type="radio" name="definitely" id="definitely option" />
+              <label for="definitely">Definitely</label>
+              <br />
+              <input type="radio" name="Maybe" id="maybe option" />
+              <label for="maybe">Maybe</label>
+              <br />
+              <input type="radio" name="not sure" id="not sure option" />
+              <label for="not sure">Not sure</label>
+            </div>
+            <br />
+
+            <div class="select-fcc">
+              <label for="Select the fcc">What do you like most in FCC:</label>
+              <select name="fcc" id="fcc option">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+              </select>
+            </div>
+            <br />
+            <br />
+            <label for=" new improvenment">Things that should be improved in the future <br />
+              (Check all that apply):</label>
+            <div class="checkbox-container">
+              <input type="checkbox" name="frontend" id="front"/>
+              <label for="fronted">Front-end Projects</label>  <br> 
+              <input type="checkbox" name="backend" id="back"/>
+              <label for="back">Back-end Projects</label> <br>
+              <input type="checkbox" name="data" id="dv" />
+              <label for="data">Data Visualization</label> <br>
+            </div>
           
+            <br />
+          </div>
+          <button type="submit">Submit</button>
         </div>
-      
-    
-    <div class="select-options">
-      <label for="Select the role"
-        >Which option best describes your current role?</label
-      >
-      <select name="options" id="options">
-        <option value="option 1">Student</option>
-        <option value="option 2">Master</option>
-        <option value="option 3">Phd</option>
-      </select>
-      <br />
-      <br />
-
-      <label for="recommendation"
-        >How likely is that you would recommend <br />freeCodeCamp to a
-        friend?</label
-      >
-      <br />
-      <div class="radio-container">
-        <input type="radio" name="radio-button" />
-        <label for="definitely">Definitely</label>
-        <br />
-        <input type="radio" name="radio-button" />
-        <label for="maybe">Maybe</label>
-        <br />
-        <input type="radio" name="radio-button" />
-        <label for="not sure">Not sure</label>
-      </div>
-      <br />
-
-      <div class="select-fcc">
-        <label for="Select the fcc">What do you like most in FCC:</label>
-        <select name="fcc" id="fcc">
-          <option value="option 1">HTML</option>
-          <option value="option 2">CSS</option>
-          <option value="option 3">JS</option>
-        </select>
-      </div>
-      <br />
-      <br />
-      <label for="improvenment"
-        >Things that should be improved in the future <br />
-        (Check all that apply):</label
-      >
-      <div class="checkbox-container">
-        <input type="checkbox" />
-        <label for="definitely">Front-end Projects</label> <br />
-        <input type="checkbox" />
-        <label for="maybe">Back-end Projects</label> <br />
-        <input type="checkbox" />
-        <label for="not sure">Data Visualization</label>
-      </div>
-      <br />
-    </div>
-    <button type="submit">Submit</button>
-  </div>
-  </form>
+      </form>
+    </form>
   </body>
-  
 </html>
